@@ -13,12 +13,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox'; // Material Check Box for Navbar
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { ToastrModule } from 'ngx-toastr';  // Toaster Module Here
 
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { DialogComponent } from './dialog/dialog.component';
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    DialogComponent
+    DialogComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { DialogComponent } from './dialog/dialog.component';
     MatCheckboxModule,
     MatCardModule,
     MatDialogModule,
+    MatSidenavModule,
 
     HttpClientModule,
 
